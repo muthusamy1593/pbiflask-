@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://bixware.com/wp-content/uploads/2019/04/fav.png" type="image/x-icon">
+  <title>BIXWARE Technologies</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Car Data Analysis - Power BI">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/powerbi-client/2.15.1/powerbi.min.js" integrity="sha512-OWIl8Xrlo8yQjWN5LcMz5SIgNnzcJqeelChqPMIeQGnEFJ4m1fWWn668AEXBrKlsuVbvDebTUJGLRCtRCCiFkg==" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+   <!--NAVIGATION BAR-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-label="Menu" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>   
+        <span class="icon-bar"></span>                            
+      </button>
+      <div class="text-left">
+        <a class="navbar-brand" href="#myPage"><strong>Bixware Technologies</strong></a>
+      </div>
+     
+    </div>
+    <div class="collapse navbar-collapse text-right" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="#reports" id="defaultOpen">Reports</a></li> -->
+        <!-- <li><a href="#sales">Sales</a></li>
+        <li><a href="#event">Events</a></li>
+        <li><a href="#contact">Contact</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (Reports Section) -->
+<div id="reports" class="container-fluid text-center">
+  <h2>Reports</h2>
+  <!-- <p>Apply filters, personalize visuals and customize graphs</p> -->
+  <section id="report-container" class="embed-container  col-sm-12" >
+</section>
+  
+</div>
+
+</body>
+</html>
